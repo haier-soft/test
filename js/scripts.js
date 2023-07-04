@@ -581,14 +581,13 @@ function fixedProd() {
           delta = 180;
         } */
         let productOffsetBottom = $(".product__right").offset().top 
-        console.log(vh)
-        console.log(offsetTop)
-        console.log(productOffsetBottom - offsetTop)
+
+        console.log($(".product__fixed").height())
        /*  let productOffsetBottom =
           product.offset().top +
           product.find(".product__left").height() 
           console.log(productOffsetBottom)*/
-        if (productOffsetBottom - offsetTop < vh * 100) {
+        if (productOffsetBottom + $(".product__fixed").height() + 30 - offsetTop < vh * 100) {
           //$(".product__fixed").css({'transform':'translate(-50%, 100%)', });
           $(".product__right").addClass("static");
           $(".product__fixed").removeClass("fixed");

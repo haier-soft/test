@@ -4,18 +4,19 @@
         position: static !important;
     }
     .product__fixed {
-        transition: transform .4s ease-out;
-        transform:translateY(0)
+
     }
     .product__fixed.fixed{
       position: fixed;
-     top: 100%;
+      bottom: 0;
       width: 100%;
+      left: 50%;
       max-width: 708px;
+      transform:translateX(-50%);
       z-index: 11;
       background: #fff;
       padding: 20px 10px 10px;
-      transform:translateY(-100%)
+
 
    }
    .product__fixed.fixed .product__share {
