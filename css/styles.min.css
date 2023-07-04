@@ -4,11 +4,11 @@
         position: static !important;
     }
     .product__fixed {
-transition: padding-bottom .5s ease-out;
+/* transition: padding-bottom .5s ease-out; */
     }
     .product__fixed.fixed{
       position: fixed;
-      bottom: 0;
+      bottom: -1px;
       width: 100%;
       left: 50%;
       max-width: 708px;
