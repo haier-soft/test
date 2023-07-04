@@ -2,6 +2,7 @@
 @media (max-width: 991px) {
     .product__right {
         position: static !important;
+        z-index: 1000;
     }
     .product__fixed {
 /* transition: padding-bottom .5s ease-out; */

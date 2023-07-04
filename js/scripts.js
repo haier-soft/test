@@ -599,17 +599,21 @@ function fixedProd() {
       }
     });
   }
-
-  $(".js-product-anchor").on("click", function (e) {
+  $(".js-product-anchor").on("click",function(e){
     e.preventDefault();
-    let target = $(this).attr("href");
-    let targetOffsetTop = $(target).position().top;
-    let productOffsetBottom =
-      product.offset().top + product.find(".product__left").height();
-    let destination = productOffsetBottom + targetOffsetTop + 40;
+    let target = $(".product__collection");
+    console.log($(target).position().top)
+    let targetOffsetTop = $(target).offset().top
+    let add = 0
+    if ($(".product__fixed").hasClass("fixed")) {
+      add = $(".product__fixed").height() 
+    } else {
+      add = 0
+    }
+    let destination = targetOffsetTop + add - 10
     $("html,body").animate({ scrollTop: destination }, 600);
     return false;
-  });
+});
 
   $(".product-info__more").on("click", function (e) {
     e.preventDefault();
