@@ -536,7 +536,7 @@ $(function () {
 function fixedProd() {
   if (window.innerWidth <= 991) {
     $(".product__fixed").addClass("fixed")
-   delta = $(".product__fixed").height()//230;
+  // delta = $(".product__fixed").height()//230;
    //$(".product__fixed").css({'transform':'translate(-50%, 0%)'});
    /*   let fixedTop = vh * 100 - delta - 20 + "px"
     $(".product__fixed").css({'position':'fixed','left': '50%','transform':'translateX(-50%)', 'max-width':'768px',"bottom": '-10px','width':'100%', 'z-index':5}); */
