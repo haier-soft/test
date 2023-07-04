@@ -4,7 +4,7 @@
         position: static !important;
     }
     .product__fixed {
-
+transition: padding-bottom .5s ease-out;
     }
     .product__fixed.fixed{
       position: fixed;
@@ -15,7 +15,8 @@
       transform:translateX(-50%);
       z-index: 11;
       background: #fff;
-      padding: 20px 10px 10px;
+      padding: 20px 10px 15px;
+      padding-bottom: 15px;
 
 
    }

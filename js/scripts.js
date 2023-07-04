@@ -587,7 +587,7 @@ function fixedProd() {
           product.offset().top +
           product.find(".product__left").height() 
           console.log(productOffsetBottom)*/
-        if (productOffsetBottom + $(".product__fixed").height() + 30 - offsetTop < vh * 100) {
+        if (productOffsetBottom + $(".product__fixed").height() + 35 - offsetTop < vh * 100) {
           //$(".product__fixed").css({'transform':'translate(-50%, 100%)', });
           $(".product__right").addClass("static");
           $(".product__fixed").removeClass("fixed");
