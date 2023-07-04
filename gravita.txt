@@ -1,0 +1,73 @@
+function searchFilterOnChange(inp) {
+  let form = inp.closest(".f-search__form") || inp.parentNode.parentNode
+  const resetBtn = form.querySelector(".f-search__reset")
+  if (inp.value.length > 0) {
+    resetBtn.style.visibility = "visible"
+    resetBtn.style.pointerEvents = "auto"
+  } else {
+    resetBtn.style.visibility = "hidden"
+    resetBtn.style.pointerEvents = "none"
+  }
+}
+
+function cleanSearchFilter(form) {
+  form.querySelector("input").value = ""
+  const resetBtn = form.querySelector(".f-search__reset")
+  resetBtn.style.visibility = "hidden"
+  resetBtn.style.pointerEvents = "none"
+}
+
+//html
+<div class="f-search__form">
+    <form action="" >
+        <div class="form-group">
+            <input type="text" name="#" placeholder="" oninput="searchFilterOnChange(this)">
+        </div>
+        <button type="reset" class="f-search__reset">
+            <svg>
+                <use href="img/icons/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <button type="submit" class="f-search__submit">
+            <svg>
+                <use href="img/icons/sprite.svg#search"></use>
+            </svg>
+        </button>
+    </form>
+</div>
+
+
+
+//css
+
+// dobavlyaem
+.f-search__reset{
+  visibility: hidden;
+  pointer-events: none;
+}
+.f-search__reset svg {
+  width: 14px;
+  height:14px;
+  fill:#2d2a26;
+  stroke: none;
+  opacity: 0.8;
+}
+.f-search__submit svg{
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:#2d2a26
+}
+//menyaem 
+.f-search form .form-group{
+  width:calc(100% - 80px);
+  margin-bottom:0
+}
+
+//udalyaem 
+.f-search form button svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: #2d2a26;
+}

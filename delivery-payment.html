@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Gravita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body>
+    <object style="display: none" class="sprite" type="image/svg+xml" data="../img/icons/sprite.svg" title="Ваш браузер не поддерживает SVG"></object>
+    <div class="wrap">
+      <!-- header-->
+      <header class="header">
+        <!-- dropdown-->
+        <div class="dropdown">
+          <div class="dropdown__inner">
+            <div class="dropdown__wrap">
+              <div class="dropdown__header">
+                <!-- location-->
+                <div class="location"><a class="location__link" href="#"> г. Москва</a>
+                  <div class="location__dropdown">
+                    <p class="location__text">Мы определили ваш город:<span>Москва</span></p><a class="location__confirm btn" href="#"><span>Верно</span>
+                      <svg>
+                        <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+                      </svg></a><a class="location__btn btn js-modal-show" href="#js-modal-city"><span>выбрать другой</span>
+                      <svg>
+                        <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <!-- end location-->
+                <!-- search-btn--><a class="search-btn" href="#">
+                  <svg>
+                    <use href="img/icons/sprite.svg#search"></use>
+                  </svg></a>
+                <!-- end search-btn-->
+                <!-- basket-btn--><a class="basket-btn" href="#">
+                  <svg>
+                    <use href="img/icons/sprite.svg#cart"></use>
+                  </svg><span>25</span></a>
+                <!-- end basket-btn-->
+              </div>
+              <p class="dropdown__title">Меню</p>
+              <!-- menu-->
+              <nav class="menu">
+                <div class="menu__col">
+                  <div class="menu__item"><a class="menu__link" href="#">Каталог</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Акции</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Проекты</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Дизайнеры</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Шоурумы</a>
+                    <div class="menu__second"><a class="menu__link" href="#">Магазины</a><a class="menu__link" href="#">Образцы в наличии</a><a class="menu__link" href="#">Контакты шоурумов</a></div>
+                  </div>
+                </div>
+                <div class="menu__col">
+                  <div class="menu__item"><a class="menu__link" href="#">О компании</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Контакты</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Отзывы</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Для дизайнеров</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Новости</a></div>
+                  <div class="menu__item"><a class="menu__link" href="#">Для партнеров</a></div>
+                </div>
+              </nav>
+              <!-- end menu-->
+              <div class="dropdown__footer"><a class="dropdown__tel" href="tel:88003453455">8 800 345-34-55</a>
+                <!-- callback-btn--><a class="callback-btn btn js-modal-show" href="#js-modal-callback"><span>Заказать звонок</span>
+                  <svg>
+                    <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+                  </svg></a>
+                <!-- end callback-btn-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end dropdown-->
+        <!-- search-->
+        <div class="search">
+          <div class="search__inner">
+            <form class="search__form" action="">
+              <div class="form-group">
+                <input type="text" name="#" placeholder="">
+              </div>
+              <button type="submit">
+                <svg>
+                  <use href="img/icons/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="search__wrap">
+              <div class="search__results">
+                <p class="search__text">Найдено 8 результатов</p>
+                <div class="search__list">
+                  <!-- search-card--><a class="search-card" href="#">
+                    <div class="search-card__img">
+                      <picture>
+                        <source srcset="img/webp/img-search1.webp" type="image/webp"><img src="img/img-search1.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="search-card__desc">
+                      <p><strong>Наст</strong>ененная панель Gravita M578 c датчиком</p>
+                    </div></a>
+                  <!-- end search-card-->
+                  <!-- search-card--><a class="search-card" href="#">
+                    <div class="search-card__img">
+                      <picture>
+                        <source srcset="img/webp/img-search2.webp" type="image/webp"><img src="img/img-search2.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="search-card__desc">
+                      <p><strong>Наст</strong>ененная панель Gravita M578 c датчиком</p>
+                    </div></a>
+                  <!-- end search-card-->
+                  <!-- search-card--><a class="search-card" href="#">
+                    <div class="search-card__img">
+                      <picture>
+                        <source srcset="img/webp/img-search3.webp" type="image/webp"><img src="img/img-search3.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="search-card__desc">
+                      <p><strong>Наст</strong>ененная панель Gravita M578 c датчиком</p>
+                    </div></a>
+                  <!-- end search-card-->
+                </div>
+                <div class="search__links"><a class="search__link" href="#">Плитка Ceramogran</a><a class="search__link" href="#">Пэтчворк</a><a class="search__link" href="#">Meisseon Neo</a><a class="search__link" href="#">Мозаика</a><a class="search__link" href="#">Гранит</a></div>
+              </div><a class="search__btn btn" href="#"><span>Все результаты</span>
+                <svg>
+                  <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <!-- end search-->
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__row">
+              <div class="header__left">
+                <!-- logo--><a class="logo" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
+                <!-- end logo-->
+              </div>
+              <div class="header__cleft">
+                <!-- location-->
+                <div class="location"><a class="location__link" href="#"> г. Москва</a>
+                  <div class="location__dropdown">
+                    <p class="location__text">Мы определили ваш город:<span>Москва</span></p><a class="location__confirm btn" href="#"><span>Верно</span>
+                      <svg>
+                        <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+                      </svg></a><a class="location__btn btn js-modal-show" href="#js-modal-city"><span>выбрать другой</span>
+                      <svg>
+                        <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <!-- end location-->
+              </div>
+              <div class="header__cright">
+                <!-- top-menu-->
+                <nav class="top-menu"><a class="top-menu__link" href="#">Каталог</a><a class="top-menu__link" href="#">Акции</a><a class="top-menu__link" href="#">Доставка</a><a class="top-menu__link" href="#">Где купить</a></nav>
+                <!-- end top-menu-->
+              </div>
+              <div class="header__right">
+                <!-- search-btn--><a class="search-btn" href="#">
+                  <svg>
+                    <use href="img/icons/sprite.svg#search"></use>
+                  </svg></a>
+                <!-- end search-btn-->
+                <!-- basket-btn--><a class="basket-btn" href="#">
+                  <svg>
+                    <use href="img/icons/sprite.svg#cart"></use>
+                  </svg><span>25</span></a>
+                <!-- end basket-btn-->
+                <!-- tel--><a class="tel" href="tel:88003453455">8 800 345-34-55</a>
+                <!-- end tel-->
+                <!-- menu-toggle-->
+                <div class="menu-toggle"><span></span><span></span><span></span></div>
+                <!-- end menu-toggle-->
+                <!-- search-close-->
+                <div class="search-close"><span></span><span></span><span></span></div>
+                <!-- end search-close-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header-->
+      <main>
+        <div class="container">
+          <!-- breadcrumbs-->
+          <nav class="breadcrumbs">
+            <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#"><span>Главная</span></a></div>
+            <div class="breadcrumbs__item"><span>Доставка и оплата</span></div>
+          </nav>
+          <!-- end breadcrumbs-->
+          <!-- page-banner-->
+          <div class="page-banner">
+            <div class="page-banner__img">
+              <picture>
+                <source srcset="img/webp/banner-delivery-sm.webp" media="(max-width:991px)" type="image/webp">
+                <source srcset="img/banner-delivery-sm.png" media="(max-width:991px)">
+                <source srcset="img/webp/banner-delivery-md.webp" media="(max-width:1360px)" type="image/webp">
+                <source srcset="img/banner-delivery-md.png" media="(max-width:1360px)">
+                <source srcset="img/webp/banner-delivery.webp" type="image/webp"><img src="img/banner-delivery.jpg" alt="">
+              </picture>
+            </div>
+            <div class="page-banner__content">
+              <p class="page-banner__title">Доставка <br> и оплата</p>
+              <p class="page-banner__text">Новая коллекция уже в продаже, более 25 новых видов <br> плиток для вашего дизайн проекта</p>
+            </div>
+          </div>
+          <!-- end page-banner-->
+        </div>
+        <!-- section-->
+        <div class="section">
+          <div class="container">
+            <p class="section__title section__title--sm">Доставка и оплата <br> в интернет магазине</p>
+            <!-- delpay-online-->
+            <div class="delpay-online">
+              <div class="delpay-online__grid">
+                <div class="delpay-online__area">
+                  <div class="delpay-online__desc">
+                    <p>«Ваш дом должен рассказывать о том, кто Вы есть, и хранить то, что Вы любите». <br> Нейт Беркус, дизайнер интерьера</p>
+                    <p>Мы собрали самые популярные запросы, чтобы Вы с легкостью наполнили Ваше пространство тем, что Вам нравится.</p>
+                  </div>
+                  <div class="delpay-online__img delpay-online__img--sm">
+                    <picture>
+                      <source srcset="img/webp/img-delpay1.webp" type="image/webp"><img src="img/img-delpay1.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="delpay-online__area">
+                  <div class="delpay-online__img">
+                    <picture>
+                      <source srcset="img/webp/img-delpay2.webp" type="image/webp"><img src="img/img-delpay2.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="delpay-online__info">
+                <div class="delpay-online__section">
+                  <p class="delpay-online__title">Выберите регион доставки:</p>
+                  <!-- accordion-->
+                  <div class="accordion">
+                    <div class="accordion__item">
+                      <div class="accordion__header"><span>Доставка по Москве и Московской области</span>
+                        <svg>
+                          <use href="img/icons/sprite.svg#plus"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion__content">
+                        <!-- info-->
+                        <div class="info">
+                          <div class="info__text">
+                            <p>Мы доставим ваш заказ в будние дни с 10-00 до 20-00. Доставка осуществляется до подъезда.</p>
+                            <p>Если вам требуется разгрузка и подъём, наши менеджеры рассчитают точную стоимость услуги при оформлении заказа.</p>
+                          </div>
+                          <div class="info__table">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Доставка</th>
+                                  <th>по Москве</th>
+                                  <th>по московской области</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Доставка до 1 500 кг - а/м «Газель»</td>
+                                  <td>2 350 руб.</td>
+                                  <td>2 350 руб. + 30 руб. за км от МКАД</td>
+                                </tr>
+                                <tr>
+                                  <td>Доставка до 3 000 кг - а/м «Бычок»</td>
+                                  <td>2 350 руб.</td>
+                                  <td>2 350 руб. + 30 руб. за км от МКАД</td>
+                                </tr>
+                                <tr>
+                                  <td>Доставка свыше 3 000 кг</td>
+                                  <td colspan="2">Стоимость рассчитывается индивидуально, зависит от веса, особенностей подъезда, времени разгрузки и т.д.</td>
+                                </tr>
+                                <tr>
+                                  <td>Разгрузка до 1 500 кг - а/м «Газель»</td>
+                                  <td>2 350 руб.</td>
+                                  <td>2 350 руб. + 30 руб. за км от МКАД</td>
+                                </tr>
+                                <tr>
+                                  <td>Разгрузка и подъем (свыше 500 кг, без лифта, крупный формат и т.п.)</td>
+                                  <td colspan="2">Стоимость рассчитывается индивидуально, зависит от веса, наличия лифта и т.д.</td>
+                                </tr>
+                                <tr>
+                                  <td>Срок доставки</td>
+                                  <td>2-3 дня</td>
+                                  <td>По договоренности</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p class="info__title">Самовывоз в Москве</p>
+                          <div class="info__text">
+                            <p>Мы доставим ваш заказ в будние дни с 10-00 до 20-00. Доставка осуществляется до подъезда.</p>
+                            <p>Если вам требуется разгрузка и подъём, наши менеджеры рассчитают точную стоимость услуги при оформлении заказа.</p>
+                          </div>
+                          <div class="info__table">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Услуга</th>
+                                  <th>Стоимость</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Самовывоз</td>
+                                  <td>2 350 руб.</td>
+                                </tr>
+                                <tr>
+                                  <td>Доставка до 3 000 кг - а/м «Бычок»</td>
+                                  <td>2 350 руб.</td>
+                                </tr>
+                                <tr>
+                                  <td>Доставка до 3 000 кг - а/м «Бычок»</td>
+                                  <td>2 350 руб.</td>
+                                </tr>
+                                <tr>
+                                  <td>Разгрузка до 1 500 кг - а/м «Газель»</td>
+                                  <td>2 350 руб.</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!-- end info-->
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header"><span>Доставка по Санкт-Петербургу и Ленинградской области</span>
+                        <svg>
+                          <use href="img/icons/sprite.svg#plus"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion__content">
+                        <div class="accordion__text"></div>
+                        <!-- info-->
+                        <div class="info">
+                          <div class="info__text">
+                            <p>Доставка осуществляется до подъезда.</p>
+                            <p>Если вам требуется разгрузка и подъём, наши менеджеры рассчитают точную стоимость услуги при оформлении заказа.</p>
+                          </div>
+                          <div class="info__table">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Доставка</th>
+                                  <th>по Санкт-Петербургу</th>
+                                  <th>по Ленинградской области</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Доставка до 1 500 кг - а/м «Газель»</td>
+                                  <td>2 000 руб.</td>
+                                  <td>2 000 руб. + 30 руб. за км от КАД</td>
+                                </tr>
+                                <tr>
+                                  <td>Доставка до 3 000 кг - а/м «Бычок»</td>
+                                  <td>3 500 руб.</td>
+                                  <td>3 500 руб. + 30 руб. за км от КАД</td>
+                                </tr>
+                                <tr>
+                                  <td>Доставка свыше 3 000 кг</td>
+                                  <td colspan="2">Стоимость рассчитывается индивидуально, зависит от веса, особенностей подъезда, времени разгрузки и т.д.</td>
+                                </tr>
+                                <tr>
+                                  <td>Разгрузка и подъем на лифте до 10 коробок</td>
+                                  <td colspan="2">1200 руб.</td>
+                                </tr>
+                                <tr>
+                                  <td>Разгрузка и подъем более 10 коробок, в т.ч. без лифта</td>
+                                  <td colspan="2">100 руб. за коробку * кол-во этажей без лифта</td>
+                                </tr>
+                                <tr>
+                                  <td>Срок доставки</td>
+                                  <td>3-5 дней</td>
+                                  <td>По договоренности</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p class="info__title">Самовывоз в Санкт-Петербурге</p>
+                          <div class="info__text">
+                            <p>Вы можете забрать заказ самостоятельно из любого магазина в Санкт-Петербурге. Точный адрес и режим работы магазинов уточняйте в самих магазинах</p>
+                          </div>
+                          <div class="info__table">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Услуга</th>
+                                  <th>Стоимость</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Доставка до точки самовывоза - магазина (до 60 кг)</td>
+                                  <td>800 руб.</td>
+                                </tr>
+                                <tr>
+                                  <td>Срок доставки</td>
+                                  <td>3-5 дней</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <!-- end info-->
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header"><span>Доставка в другие регионы России</span>
+                        <svg>
+                          <use href="img/icons/sprite.svg#plus"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion__content">
+                        <div class="accordion__text"></div>
+                        <!-- info-->
+                        <div class="info">
+                          <div class="info__desc">
+                            <p>Мы доставим ваш заказ до любой выбранной вами транспортной компании, находящейся в Москве или Московской области. Договор с транспортной компанией на перевозку в ваш город вам необходимо оформить самостоятельно. Стоимость доставки до транспортной компании рассчитывается по стандартным тарифам доставки по Москве и Московской области.</p>
+                            <p>Мы вам порекомендуем надёжных перевозчиков, если вам потребуется помощь в выборе транспортной компании.</p>
+                          </div>
+                        </div>
+                        <!-- end info-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end accordion-->
+                </div>
+                <div class="delpay-online__section">
+                  <p class="delpay-online__title">Способы оплаты в интернет магазине:</p>
+                  <!-- accordion-->
+                  <div class="accordion">
+                    <div class="accordion__item">
+                      <div class="accordion__header"><span>Онлайн банковской картой</span>
+                        <svg>
+                          <use href="img/icons/sprite.svg#plus"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion__content">
+                        <!-- info-->
+                        <div class="info">
+                          <div class="info__desc">
+                            <p>Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться ввод специального пароля.</p>
+                            <p>Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int., MasterCard Europe Sprl, JCB</p>
+                          </div>
+                        </div>
+                        <!-- end info-->
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <div class="accordion__header"><span>ПО счету</span>
+                        <svg>
+                          <use href="img/icons/sprite.svg#plus"></use>
+                        </svg>
+                      </div>
+                      <div class="accordion__content">
+                        <div class="accordion__text"></div>
+                        <!-- info-->
+                        <div class="info">
+                          <div class="info__desc">
+                            <p>Оплата производится со счета организации или частного лица. Отгрузка товара возможна только после зачисления средств.</p>
+                          </div>
+                        </div>
+                        <!-- end info-->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end accordion-->
+                </div>
+              </div>
+            </div>
+            <!-- end delpay-online-->
+          </div>
+        </div>
+        <!-- end section-->
+        <!-- section-->
+        <div class="section section--dark">
+          <div class="container">
+            <p class="section__title section__title--sm"> Доставка и оплата <br> в оффлайн магазине</p>
+            <!-- delpay-offline-->
+            <div class="delpay-offline">
+              <div class="delpay-offline__area">
+                <div class="delpay-offline__img delpay-offline__img--sm">
+                  <picture>
+                    <source srcset="img/webp/img-delpay3.webp" type="image/webp"><img src="img/img-delpay3.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="delpay-offline__area">
+                <div class="delpay-offline__desc">
+                  <p>При оформлении заказа в одном из выставочных магазинов сети "Gravita", вы можете сразу оплатить свой товар наличными средствами.</p>
+                  <p>Также вы можете сразу оплатить свой товар банковской картой любого банка. Надежность платежей обеспечивает банк-эквайер ПАО "Сбербанк России"</p>
+                </div>
+              </div>
+              <div class="delpay-offline__area">
+                <div class="delpay-offline__img">
+                  <picture>
+                    <source srcset="img/webp/img-delpay4.webp" type="image/webp"><img src="img/img-delpay4.jpg" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="delpay-offline__area">
+                <p class="delpay-offline__text">Более подробную Информацию о доставке и оплате уточняйте в самих магазинах</p>
+              </div>
+            </div>
+            <!-- end delpay-offline-->
+          </div>
+        </div>
+        <!-- end section-->
+      </main>
+      <!-- footer-->
+      <footer class="footer">
+        <div class="container">
+          <!-- footerbar-->
+          <div class="footerbar">
+            <div class="footerbar__left">
+              <!-- logo--><a class="logo" href="index.html"><img src="img/icons/logo-white.svg" alt=""></a>
+              <!-- end logo-->
+            </div>
+            <div class="footerbar__center">
+              <!-- f-menu-->
+              <nav class="f-menu">
+                <div class="f-menu__col">
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Каталог</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Доставка</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Акции</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Где купить</a></div>
+                </div>
+                <div class="f-menu__col">
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">О компании</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Проекты</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Отзывы</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Контакты</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Шоурумы</a>
+                    <div class="f-menu__second"><a class="f-menu__link" href="#">Магазины</a><a class="f-menu__link" href="#">Образцы в наличии</a><a class="f-menu__link" href="#">Контакты шоурумов</a></div>
+                  </div>
+                </div>
+                <div class="f-menu__col">
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Для дизайнеров</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Для партнеров</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Дизайнеры</a></div>
+                  <div class="f-menu__item"><a class="f-menu__link" href="#">Новости</a></div>
+                </div>
+              </nav>
+              <!-- end f-menu-->
+            </div>
+            <div class="footerbar__right">
+              <!-- f-contacts-->
+              <div class="f-contacts">
+                <!-- social-->
+                <nav class="social"><a class="social__link" href="#">Telegram</a><a class="social__link" href="#">WhatsApp</a><a class="social__link" href="#">Viber</a><a class="social__link" href="#">ВКонтакте</a></nav>
+                <!-- end social-->
+                <div class="f-contacts__col"><a class="f-contacts__link" href="tel:88003453455">8 800 345-34-55</a><a class="f-contacts__link" href="mailto:gravita@mail.ru">Gravita@mail.ru</a></div>
+              </div>
+              <!-- end f-contacts-->
+            </div>
+          </div>
+          <!-- end footerbar-->
+          <!-- bottom-->
+          <div class="bottom">
+            <div class="bottom__col">
+              <p class="bottom__text">2022 &copy; All right reserved</p>
+            </div>
+            <div class="bottom__col">
+              <p class="bottom__text">сделано в <noindex><a class="dev" href="#" rel="nofollow"><svg><use href="img/icons/sprite.svg#logo-omni"></use></svg></a></noindex></p>
+            </div>
+            <div class="bottom__col">
+              <p class="bottom__text"><a href="#">Кукис & Политика конфиденциальности</a></p>
+            </div>
+          </div>
+          <!-- end bottom-->
+        </div>
+      </footer>
+      <!-- end footer-->
+    </div>
+    <!-- modal-->
+    <div class="modal js-modal" id="js-modal-callback">
+      <div class="modal__inner"><a class="modal__close js-modal-close" href="#">
+          <svg>
+            <use href="img/icons/sprite.svg#close"></use>
+          </svg></a>
+        <p class="modal__title">Заказать обратный звонок</p>
+        <form action="">
+          <div class="form-group error">
+            <input type="text" name="#" placeholder="Имя"><span>Текст введен не верно, попробуйте снова</span>
+          </div>
+          <div class="form-group">
+            <input class="phone" type="tel" name="#" placeholder="Телефон">
+          </div>
+          <button class="modal__btn btn" type="submit"><span>Связаться со мной</span>
+            <svg>
+              <use href="img/icons/sprite.svg#arrow-bottom-right"></use>
+            </svg>
+          </button>
+          <p class="modal__text">*Отправляя заявку, я соглашаюсь с условиями<a href="#">Политикой конфиденциальности</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="modal js-modal" id="js-modal-thanks">
+      <div class="modal__inner"><a class="modal__close js-modal-close" href="#">
+          <svg>
+            <use href="img/icons/sprite.svg#close"></use>
+          </svg></a>
+        <div class="modal__wrap">
+          <p>Заявка успешно отправлена</p>
+          <p>Мы с вами скоро свяжемся</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-modal" id="js-modal-city">
+      <div class="modal__inner"><a class="modal__close js-modal-close" href="#">
+          <svg>
+            <use href="img/icons/sprite.svg#close"></use>
+          </svg></a>
+        <p class="modal__title">Укажите свой город</p>
+        <!-- city-search-->
+        <div class="city-search">
+          <form class="city-search__form" action="">
+            <div class="form-group error">
+              <input type="text" name="#" placeholder="Введите название"><span>Введенный вами город не найден</span>
+            </div>
+            <button type="submit">
+              <svg>
+                <use href="img/icons/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="city-search__list">
+            <div class="city-search__col"><a class="city-search__link" href="#">Москва</a><a class="city-search__link" href="#">Санкт-Петербург</a><a class="city-search__link" href="#">Краснодар</a><a class="city-search__link" href="#">Благовещенск</a><a class="city-search__link" href="#">Владимир</a><a class="city-search__link" href="#">Волгоград</a><a class="city-search__link" href="#">Воронеж</a><a class="city-search__link" href="#">Екатеринбург</a><a class="city-search__link" href="#">Казань</a><a class="city-search__link" href="#">Калуга</a><a class="city-search__link" href="#">Комсомольск-на-Амуре</a><a class="city-search__link" href="#">Махачкала</a><a class="city-search__link" href="#">Нижний Новгород</a><a class="city-search__link" href="#">Новосибирск</a></div>
+            <div class="city-search__col"><a class="city-search__link" href="#">Пермь</a><a class="city-search__link" href="#">Ростов-на-Дону</a><a class="city-search__link" href="#">Рязань</a><a class="city-search__link" href="#">Сочи</a><a class="city-search__link" href="#">Тверь</a><a class="city-search__link" href="#">Тольятти</a><a class="city-search__link" href="#">Тула</a><a class="city-search__link" href="#">Тюмень</a><a class="city-search__link" href="#">Ульяновск</a><a class="city-search__link" href="#">Уссурийск</a><a class="city-search__link" href="#">Уфа</a><a class="city-search__link" href="#">Челябинск</a><a class="city-search__link" href="#">Якутск</a><a class="city-search__link" href="#"></a></div>
+          </div>
+        </div>
+        <!-- end city-search-->
+      </div>
+    </div>
+    <div class="modal js-modal" id="js-modal-share">
+      <div class="modal__inner"><a class="modal__close js-modal-close" href="#">
+          <svg>
+            <use href="img/icons/sprite.svg#close"></use>
+          </svg></a>
+        <p class="modal__title">Поделитесь нашим товаром!</p>
+        <!-- share-list-->
+        <div class="share-list"><a class="share-list__item js-copy-product-link" href="#product-link"><img src="img/icons/link-variant.svg" alt=""><span>Скопировать ссылку</span></a><a class="share-list__item" href="#"><img src="img/icons/baseline-telegram.svg" alt=""><span>Телеграм</span></a><a class="share-list__item" href="#"><img src="img/icons/simple-icons_vk.svg" alt=""><span>VK</span></a><a class="share-list__item" href="#"><img src="img/icons/baseline-whatsapp.svg" alt=""><span>WhatsApp</span></a><a class="share-list__item" href="#"><img src="img/icons/viber-outline.svg" alt=""><span>Viber</span></a><a class="share-list__item" href="#"><img src="img/icons/ok-ru.svg" alt=""><span>Одноклассники</span></a></div>
+        <!-- end share-list-->
+      </div>
+    </div>
+    <!-- end modal-->
+    <!-- copy-label-->
+    <div class="copy-label js-copy-label"><span>Артикул скопирован</span></div>
+    <div class="copy-label copy-label--light js-copy-label-light"><span>Ссылка скопирована</span></div>
+    <!-- end copy-label-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU"></script>
+  </body>
+</html>
