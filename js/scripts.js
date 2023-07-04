@@ -575,15 +575,20 @@ function fixedProd() {
             product.removeClass("fixed").addClass("absolute");
           }  
         } else {
+          
           //$("product__right").css({ top: ``});
         /* if (window.innerWidth < 576) {
           delta = 180;
         } */
-        let productOffsetBottom =
+        let productOffsetBottom = $(".product__right").offset().top 
+        console.log(vh)
+        console.log(offsetTop)
+        console.log(productOffsetBottom - offsetTop)
+       /*  let productOffsetBottom =
           product.offset().top +
-          product.find(".product__left").height() -
-          $(window).height() 
-        if (offsetTop > productOffsetBottom) {
+          product.find(".product__left").height() 
+          console.log(productOffsetBottom)*/
+        if (productOffsetBottom - offsetTop < vh * 100) {
           //$(".product__fixed").css({'transform':'translate(-50%, 100%)', });
           $(".product__right").addClass("static");
           $(".product__fixed").removeClass("fixed");
@@ -591,7 +596,7 @@ function fixedProd() {
           $(".product__right").removeClass("static");
           $(".product__fixed").addClass("fixed");
           //$(".product__fixed").css({'transform':'translate(-50%, 0%)', });
-        }
+        } 
       }
     });
   }
