@@ -535,12 +535,14 @@ $(function () {
    */
 function fixedProd() {
   if (window.innerWidth <= 991) {
+    $(".product__fixed").addClass("fixed")
    delta = $(".product__fixed").height()//230;
-   $(".product__fixed").css({'transform':'translate(-50%, 0%)'});
+   //$(".product__fixed").css({'transform':'translate(-50%, 0%)'});
    /*   let fixedTop = vh * 100 - delta - 20 + "px"
     $(".product__fixed").css({'position':'fixed','left': '50%','transform':'translateX(-50%)', 'max-width':'768px',"bottom": '-10px','width':'100%', 'z-index':5}); */
   } else {
-    $(".product__fixed").css({'transform':'translate(0%, 0%)'});
+    $(".product__fixed").removeClass("fixed")
+    //$(".product__fixed").css({'transform':'translate(0%, 0%)'});
   }
 }
   let product = $(".product");
@@ -582,11 +584,13 @@ function fixedProd() {
           product.find(".product__left").height() -
           $(window).height() 
         if (offsetTop > productOffsetBottom) {
-          $(".product__fixed").css({'transform':'translate(-50%, 100%)', });
+          //$(".product__fixed").css({'transform':'translate(-50%, 100%)', });
           $(".product__right").addClass("static");
+          $(".product__fixed").removeClass("fixed");
         } else {
           $(".product__right").removeClass("static");
-          $(".product__fixed").css({'transform':'translate(-50%, 0%)', });
+          $(".product__fixed").addClass("fixed");
+          //$(".product__fixed").css({'transform':'translate(-50%, 0%)', });
         }
       }
     });

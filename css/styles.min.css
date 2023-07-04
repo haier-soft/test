@@ -4,6 +4,9 @@
         position: static !important;
     }
     .product__fixed {
+       
+    }
+    .product__fixed.fixed{
       position: fixed;
       bottom: -40px;
       width: 100%;
@@ -12,11 +15,12 @@
       transform: translateX(-50%);
       z-index: 5;
       background: #fff;
-      padding-top: 20px;
-      transition: all .5s ease-out;
+      padding: 20px 10px;
+      transition: all 0s ease-out;
    }
-   .product__share {
+   .product__fixed.fixed .product__share {
     top: 20px;
+    right: 10px;
    }
 }
 
