@@ -17,10 +17,17 @@
       background: #fff;
       padding: 20px 10px;
       transition: all 0s ease-out;
+
    }
    .product__fixed.fixed .product__share {
     top: 20px;
     right: 10px;
    }
+}
+@media screen and (max-width: 767px){
+    .product__fixed.fixed{
+        max-width: 550px;
+  
+     }
 }
 
