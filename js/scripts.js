@@ -575,14 +575,16 @@ function fixedProd() {
             product.removeClass("fixed").addClass("absolute");
           }  
         } else {
-          
+          console.log(vh)
+          console.log(window.innerHeight)
+        
           //$("product__right").css({ top: ``});
         /* if (window.innerWidth < 576) {
           delta = 180;
         } */
         let productOffsetBottom = $(".product__right").offset().top 
 
-        console.log($(".product__fixed").height())
+      
        /*  let productOffsetBottom =
           product.offset().top +
           product.find(".product__left").height() 
