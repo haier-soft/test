@@ -814,7 +814,7 @@ $(function () {
 
   });
   $cataloGridMain = $(".catalog-grid--main")
-  $cataloGridMain.imagesLoaded(function () {
+  $(".catalog-grid--main").imagesLoaded(function () {
     $cataloGridMain.masonry({
       horizontalOrder: true,
       gutter: gutterMasonry,
