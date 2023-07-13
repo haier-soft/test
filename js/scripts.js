@@ -530,24 +530,8 @@ $(function () {
   /*
    * Product
    */
-  function fixedProd() {
-    if (window.innerWidth <= 991) {
-      // $(".product__fixed").addClass("fixed")
-      // delta = $(".product__fixed").height()//230;
-      //$(".product__fixed").css({'transform':'translate(-50%, 0%)'});
-      /*   let fixedTop = vh * 100 - delta - 20 + "px"
-       $(".product__fixed").css({'position':'fixed','left': '50%','transform':'translateX(-50%)', 'max-width':'768px',"bottom": '-10px','width':'100%', 'z-index':5}); */
-    } else {
-      // $(".product__fixed").removeClass("fixed")
-      //$(".product__fixed").css({'transform':'translate(0%, 0%)'});
-    }
-  }
   let product = $(".product");
   if (product.length > 0) {
-    let delta
-    fixedProd()
-    $(window).on("resize", () => fixedProd())
-    $(window).on("orientationchange", () => fixedProd())
     $(window).on("scroll", function () {
       let offsetTop = $(window).scrollTop();
       if (window.innerWidth > 991) {
@@ -572,28 +556,11 @@ $(function () {
           product.removeClass("fixed").addClass("absolute");
         }
       } else {
-        console.log(vh)
-        console.log(window.innerHeight)
-
-        //$("product__right").css({ top: ``});
-        /* if (window.innerWidth < 576) {
-          delta = 180;
-        } */
-        let productOffsetBottom = $(".product__right").offset().top
-
-
-        /*  let productOffsetBottom =
-           product.offset().top +
-           product.find(".product__left").height() 
-           console.log(productOffsetBottom)*/
-        if (productOffsetBottom + $(".product__fixed").height() + 35 - offsetTop < vh * 100) {
-          //$(".product__fixed").css({'transform':'translate(-50%, 100%)', });
-          $(".product__right").addClass("static");
+        let productFixedTop = $(".product__right").offset().top
+        if (productFixedTop + $(".product__fixed").height() + 35 - offsetTop < vh * 100) {
           $(".product__fixed").removeClass("fixed");
         } else {
-          $(".product__right").removeClass("static");
           $(".product__fixed").addClass("fixed");
-          //$(".product__fixed").css({'transform':'translate(-50%, 0%)', });
         }
       }
     });
@@ -601,7 +568,6 @@ $(function () {
   $(".js-product-anchor").on("click", function (e) {
     e.preventDefault();
     let target = $(".product__collection");
-    console.log($(target).position().top)
     let targetOffsetTop = $(target).offset().top
     let add = 0
     if ($(".product__fixed").hasClass("fixed")) {
@@ -813,6 +779,9 @@ $(function () {
     })
 
   });
+  $(window).on("resize", function () {
+    console.log("resize")
+  })
   $cataloGridMain = $(".catalog-grid--main")
   $(".catalog-grid--main").imagesLoaded(function () {
     $cataloGridMain.masonry({
