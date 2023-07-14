@@ -779,9 +779,6 @@ $(function () {
     })
 
   });
-  $(window).on("resize", function () {
-    alert("resize")
-  })
   $cataloGridMain = $(".catalog-grid--main")
   $(".catalog-grid--main").imagesLoaded(function () {
     $cataloGridMain.masonry({
