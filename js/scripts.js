@@ -724,11 +724,12 @@ $(function () {
       gutterMasonry = 10;
       gutterMasonryColl = 10;
     }
+
     $cataloGridMain = $(".catalog-grid--main")
     $cataloGridMain.imagesLoaded(function () {
       $cataloGridMain.masonry({
         horizontalOrder: true,
-        gutter: gutterMasonry,
+        //gutter: gutterMasonry,
         itemSelector: ".catalog-grid__item--main",
         columnWidth: '.catalog-grid__item--main'
       });
